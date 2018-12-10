@@ -13,4 +13,9 @@ object HttpPath {
     const val READ_TIME_OUT = 10L
     const val WRITE_TIME_OUT = 10L
 
+    /**
+     * 接口请求总地址
+     */
+    const val BASE_URL = ""
+
 }
