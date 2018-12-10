@@ -1,7 +1,8 @@
-package com.example.zaq.kotlinframe
+package com.example.zaq.kotlinframe.ui.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.zaq.kotlinframe.R
 
 class MainActivity : AppCompatActivity() {
 
