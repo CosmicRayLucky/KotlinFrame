@@ -1,11 +1,13 @@
 package com.example.zaq.kotlinframe.util
 
+import com.example.zaq.kotlinframe.App
+
 /**
  * Created by Zhang Aqi on 2018/8/27. 17:09
  * mail:1095187377@qq.com
  */
 object Constants {
-    const val TAG = "HuanZu"
+    val APP_TAG = App.sAppContext.packageName
     /**
      * 网络请求失败Toast提示内容
      */
