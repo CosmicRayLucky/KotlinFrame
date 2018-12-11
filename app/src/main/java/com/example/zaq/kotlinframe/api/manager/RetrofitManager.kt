@@ -1,4 +1,4 @@
-package com.example.zaq.kotlinframe.core
+package com.example.zaq.kotlinframe.api.manager
 
 import android.util.Log
 import com.example.zaq.kotlinframe.api.HttpPath

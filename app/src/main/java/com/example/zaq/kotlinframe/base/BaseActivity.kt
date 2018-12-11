@@ -1,6 +1,7 @@
 package com.example.zaq.kotlinframe.base
 
 import android.os.Bundle
+import com.example.zaq.kotlinframe.core.ActivityCollector
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity
 
 /**
@@ -21,6 +22,8 @@ abstract class BaseActivity<V : IView, P : BasePresenter<V>> : RxAppCompatActivi
         mPresenter = createPresenter()
         mView = createView()
         mPresenter.attachView(mView)
+
+        ActivityCollector.addActivity(this, javaClass)
 
         afterCreate()
     }

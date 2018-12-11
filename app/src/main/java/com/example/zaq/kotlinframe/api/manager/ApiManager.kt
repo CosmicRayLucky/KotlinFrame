@@ -2,7 +2,6 @@ package com.example.zaq.kotlinframe.api.manager
 
 import com.example.zaq.kotlinframe.api.HttpPath
 import com.example.zaq.kotlinframe.api.service.ApiService
-import com.example.zaq.kotlinframe.core.RetrofitManager
 
 /**
  * Created by Zhang Aqi on 2018/12/10. 13:50

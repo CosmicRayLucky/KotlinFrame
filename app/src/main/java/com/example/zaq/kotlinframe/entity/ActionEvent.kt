@@ -8,14 +8,11 @@ import java.io.Serializable
  */
 
 class ActionEvent : Serializable {
-
-
     var eventType: Int = 0
 
-
     /**
-     * 10001------通知HomeFragment刷新房源信息
-     * 10002------接收到好友添加请求，通知好友列表展示未读小红点
+     * 10001------
+     * 10002------
      */
     object EventCode {
         val CODE_10001 = 10001

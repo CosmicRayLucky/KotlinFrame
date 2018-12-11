@@ -11,22 +11,13 @@ import android.view.MotionEvent
  */
 
 class FreeViewPager(context: Context, attrs: AttributeSet? = null) : ViewPager(context, attrs) {
+    private var scrollEnable = true
 
-    private var scollEnable = true
+    override fun onTouchEvent(ev: MotionEvent): Boolean = if (scrollEnable) super.onTouchEvent(ev) else false
 
-    fun setScollEnable(scollEnable: Boolean) {
-        this.scollEnable = scollEnable
-    }
+    override fun onInterceptTouchEvent(ev: MotionEvent): Boolean = if (scrollEnable) super.onTouchEvent(ev) else false
 
-    override fun onTouchEvent(ev: MotionEvent): Boolean {
-        return if (!scollEnable) {
-            false
-        } else super.onTouchEvent(ev)
-    }
-
-    override fun onInterceptTouchEvent(ev: MotionEvent): Boolean {
-        return if (!scollEnable) {
-            false
-        } else super.onInterceptTouchEvent(ev)
+    fun setScollEnable(scrollEnable: Boolean) {
+        this.scrollEnable = scrollEnable
     }
 }
