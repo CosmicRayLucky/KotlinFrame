@@ -6,7 +6,7 @@ import com.example.zaq.kotlinframe.App
  * Created by Zhang Aqi on 2019/2/15. 09:44
  * mail:1095187377@qq.com
  */
-class DimenUtil {
+object DimenUtil {
     /** sp转换成px  */
     fun sp2px(spValue: Float): Int {
         val fontScale = App.sAppContext.resources.displayMetrics.scaledDensity
