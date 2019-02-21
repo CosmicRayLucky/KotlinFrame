@@ -10,9 +10,7 @@ import com.example.zaq.kotlinframe.ui.model.LoginModel
  */
 class LoginPresenter constructor(val context: Context) : LoginContract.Presenter() {
 
-    init {
-        var loginModel = LoginModel()
-    }
+    var loginModel = LoginModel()
 
     override fun login() {
 
