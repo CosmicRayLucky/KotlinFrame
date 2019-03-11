@@ -3,7 +3,7 @@ package com.example.zaq.kotlinframe.ui.activity
 import com.example.zaq.kotlinframe.R
 import com.example.zaq.kotlinframe.base.BaseActivity
 import com.example.zaq.kotlinframe.ui.contract.LoginContract
-import com.example.zaq.kotlinframe.ui.presenter.LoginPresenter
+import com.example.zaq.kotlinframe.ui.presenter.LoginActivityP
 
 /**
  * Created by Zhang Aqi on 2018/12/6. 14:29
@@ -13,7 +13,7 @@ class LoginActivity : BaseActivity<LoginContract.View, LoginContract.Presenter>(
 
     override fun getLayoutId(): Int = R.layout.activity_main
 
-    override fun createPresenter(): LoginContract.Presenter = LoginPresenter(this)
+    override fun createPresenter(): LoginContract.Presenter = LoginActivityP(this)
 
     override fun createView(): LoginContract.View = this
 

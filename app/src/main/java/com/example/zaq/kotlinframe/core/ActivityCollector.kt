@@ -12,7 +12,16 @@ import java.util.LinkedHashMap
  * Created by Zhang Aqi on 2018/9/13. 11:25
  * mail:1095187377@qq.com
  */
-object ActivityCollector {
+class ActivityCollector {
+
+    private object LazySingle {
+        val INSTANCE = ActivityCollector()
+    }
+
+    companion object {
+        fun getInstance() = LazySingle.INSTANCE
+    }
+
     /**
      * 存放activity的列表
      */
