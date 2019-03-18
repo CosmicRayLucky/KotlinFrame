@@ -2,6 +2,7 @@ package com.example.zaq.kotlinframe.base
 
 import android.os.Bundle
 import com.example.zaq.kotlinframe.core.ActivityCollector
+import com.example.zaq.kotlinframe.core.FixMemLeak
 import com.trello.rxlifecycle2.components.support.RxAppCompatActivity
 
 /**
@@ -23,13 +24,14 @@ abstract class BaseActivity<V : IView, P : BasePresenter<V>> : RxAppCompatActivi
         mView = createView()
         mPresenter.attachView(mView)
 
-        ActivityCollector.addActivity(this, javaClass)
+        ActivityCollector.getInstance().addActivity(this, javaClass)
 
         afterCreate()
     }
 
     override fun onDestroy() {
         super.onDestroy()
+        FixMemLeak.fixLeak(this)
         mPresenter.detachView()
     }
 

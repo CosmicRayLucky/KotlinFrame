@@ -61,8 +61,8 @@ class ActivityCollector {
      * @param clazz Activity 的类对象
      * @return
      */
-    fun <T : Activity> getActivity(clazz: Class<T>): T? {
-        return activities!![clazz] as T?
+    fun <T : Activity> getActivity(clazz: Class<T>): Activity? {
+        return activities!![clazz]
     }
 
     /**
