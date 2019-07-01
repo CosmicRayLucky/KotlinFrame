@@ -12,14 +12,12 @@ import java.util.LinkedHashMap
  * Created by Zhang Aqi on 2018/9/13. 11:25
  * mail:1095187377@qq.com
  */
-class ActivityCollector {
-
-    private object LazySingle {
-        val INSTANCE = ActivityCollector()
-    }
+class ActivityCollector private constructor() {
 
     companion object {
-        fun getInstance() = LazySingle.INSTANCE
+        val instanc: ActivityCollector by lazy(LazyThreadSafetyMode.SYNCHRONIZED) {
+            ActivityCollector()
+        }
     }
 
     /**
