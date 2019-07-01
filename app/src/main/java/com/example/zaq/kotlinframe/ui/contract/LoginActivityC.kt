@@ -8,7 +8,7 @@ import com.example.zaq.kotlinframe.base.IView
  * Created by Zhang Aqi on 2018/12/6. 14:30
  * mail:1095187377@qq.com
  */
-interface LoginContract {
+interface LoginActivityC {
 
     interface View : IView {
         fun setMsg(msg: String)
