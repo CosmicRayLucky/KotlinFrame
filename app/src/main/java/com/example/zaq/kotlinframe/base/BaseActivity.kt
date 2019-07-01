@@ -24,7 +24,7 @@ abstract class BaseActivity<V : IView, P : BasePresenter<V>> : RxAppCompatActivi
         mView = createView()
         mPresenter.attachView(mView)
 
-        ActivityCollector.getInstance().addActivity(this, javaClass)
+        ActivityCollector.instanc.addActivity(this, javaClass)
 
         afterCreate()
     }

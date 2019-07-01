@@ -30,6 +30,19 @@ object Constants {
      */
     const val WINDOW_DARK_LEVEL = 0.6f
 
+    /**
+     * 百度相关参数
+     */
+    object BaiDuParams {
+        // 百度AppID
+        const val BAIDU_APPID = "16212743"
+        // 百度API Key
+        const val BAIDU_API_KEY = "595Gjn8dv91LQdGQrnBikeQ8"
+        // 百度Secret Key
+        const val BAIDU_SECRET_KEY = "w6AWDyObAbg0Ff7BM4MBnTahKuPBsgfC"
+    }
+
+
     object ResponseCode {
         // 请求成功
         const val SUCCESS_CODE = 200

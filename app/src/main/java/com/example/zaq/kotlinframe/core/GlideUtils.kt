@@ -6,6 +6,7 @@ import android.widget.ImageView
 import com.bumptech.glide.request.RequestOptions
 import com.example.zaq.kotlinframe.GlideApp
 import com.example.zaq.kotlinframe.R
+import jp.wasabeef.glide.transformations.BlurTransformation
 import java.util.concurrent.ExecutionException
 
 /**
@@ -30,6 +31,21 @@ object GlideUtils {
             .placeholder(R.mipmap.ic_launcher_round)
             .error(R.mipmap.ic_launcher_round)
             .into(imageView)
+    }
+
+    /**
+     * 高斯模糊
+     *
+     * @param context
+     * @param o
+     * @param imageView
+     */
+    fun blur(context: Context, o: Any, imageView: ImageView) {
+        GlideApp.with(context).load(o).thumbnail(0.1f).apply(
+            RequestOptions.bitmapTransform(
+                BlurTransformation(20, 20)
+            )
+        ).into(imageView)
     }
 
 
