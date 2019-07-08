@@ -60,7 +60,7 @@ android {
     signingConfigs {
         debug {
             //签名文件的局对路径
-            storeFile file("D:/Android/huanzu.jks")
+            storeFile file("F:/Android/KeyStore/huanzu.jks")
             storePassword "huanzu"
             keyAlias "huanzu"
             keyPassword "huanzu"
@@ -69,7 +69,7 @@ android {
         }
         relealse {
             //签名文件的局对路径
-            storeFile file("D:/Android/huanzu.jks")
+            storeFile file("F:/Android/KeyStore/huanzu.jks")
             storePassword "huanzu"
             keyAlias "huanzu"
             keyPassword "huanzu"
