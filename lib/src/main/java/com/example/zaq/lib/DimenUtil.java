@@ -34,8 +34,8 @@ public class DimenUtil {
     }
 
     public static void main(String[] args) {
-        int xMaxValue = 1200;
-        int yMaxValue = 800;
+        int xMaxValue = 1080;
+        int yMaxValue = 1920;
         try {
             if (args.length >= 2) {
                 xMaxValue = Integer.parseInt(args[0]);
