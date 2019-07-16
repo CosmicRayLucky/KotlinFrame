@@ -31,6 +31,7 @@ abstract class BaseActivity<V : IView, P : BasePresenter<V>> : RxAppCompatActivi
 
     override fun onDestroy() {
         super.onDestroy()
+        ActivityCollector.instanc.removeActivity(this)
         FixMemLeak.fixLeak(this)
         mPresenter.detachView()
     }
