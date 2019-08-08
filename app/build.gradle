@@ -60,21 +60,21 @@ android {
     signingConfigs {
         debug {
             //签名文件的局对路径
-            storeFile file("F:/Android/KeyStore/huanzu.jks")
-            storePassword "huanzu"
-            keyAlias "huanzu"
-            keyPassword "huanzu"
-            v1SigningEnabled true
-            v2SigningEnabled true
+//            storeFile file("F:/Android/KeyStore/huanzu.jks")
+//            storePassword "huanzu"
+//            keyAlias "huanzu"
+//            keyPassword "huanzu"
+//            v1SigningEnabled true
+//            v2SigningEnabled true
         }
         relealse {
             //签名文件的局对路径
-            storeFile file("F:/Android/KeyStore/huanzu.jks")
-            storePassword "huanzu"
-            keyAlias "huanzu"
-            keyPassword "huanzu"
-            v1SigningEnabled true
-            v2SigningEnabled true
+//            storeFile file("F:/Android/KeyStore/huanzu.jks")
+//            storePassword "huanzu"
+//            keyAlias "huanzu"
+//            keyPassword "huanzu"
+//            v1SigningEnabled true
+//            v2SigningEnabled true
         }
     }
 
